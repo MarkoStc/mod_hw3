@@ -71,7 +71,7 @@ def train_model(model, optimizer, optimize, max_epochs):
         if acc > best_acc:
             best_acc = acc
 
-        print(f"Epoch {epoch} with {round(acc, 3)} accuracy on the validation set.")
+        print(f"Epoch {epoch} with {round(acc, 10)} accuracy on the validation set.")
         epoch += 1
 
 def disable_running_stats(model):
